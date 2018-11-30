@@ -1,0 +1,14 @@
+<h4 class="modal-title" id="myLargeModalLabel">
+
+    Register</h4>
+<form class="lg-frm" style="padding:25px">
+    <label>Name :</label>
+    <input type="text" class="form-control" placeholder="Enter Votre Nom Utilisateur" name="nom" [(ngModel)]="nom">
+    <label>Email :</label>
+    <input type="text" class="form-control" placeholder="Enter Email De Votre Entreprise" name="email" [(ngModel)]="email">
+    <label>Passoward :</label>
+    <input type="password" class="form-control" placeholder="Enter Passoward De l'entreprise" name="password" [(ngModel)]="password">
+    <label>Repeat Password :</label>
+    <input type="password" class="form-control" placeholder="Enter Passoward De l'entreprise" name="reapetpassword" [(ngModel)]="reapetpassword">
+    <button type="button" class="btn btn-primary " (click)="registre() ">SignUp</button>
+</form>

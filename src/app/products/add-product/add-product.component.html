@@ -1,0 +1,43 @@
+<section id="creer" class="about-us">
+    <div class="container">
+        <div class="about-us-content">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-about-us">
+                        <div class="about-us-txt">
+                            <h2>Add Product In Bakeli-Shope</h2>
+                            <p>
+                                I can add a Product in my shope
+                            </p>
+
+                            <!--/.project-btn-->
+                        </div>
+                        <!--/.about-us-txt-->
+                    </div>
+                    <!--/.single-about-us-->
+                </div>
+                <!--/.col-->
+                <div class="col-sm-6 header-right pull-right">
+                    <form class="lg-frm " style=" padding:25px ">
+                        <label>Name :</label>
+                        <input type="text " class="form-control " placeholder="Name of product" name="name" [(ngModel)]="data.name">
+                        <label>Price:</label>
+                        <input type="text" class="form-control" placeholder="the price of product" name="price" [(ngModel)]="data.price">
+                        <label>Quantity :</label>
+                        <input type="text" class="form-control" placeholder="quantity of product" name="quantity" [(ngModel)]="data.quantity">
+
+
+                        <button type="button" class="btn btn-primary " (click)="addproduct()">Add Product</button>
+                    </form>
+                    <!--/.single-about-us-->
+                </div>
+                <!--/.col-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.about-us-content-->
+    </div>
+    <!--/.container-->
+
+</section>
+<!--/.about-us-->
