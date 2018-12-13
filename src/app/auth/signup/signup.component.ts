@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
       }).catch(error=>{
         console.error(error)
       })
-    }else console.log("le mot de passes ne correspondent pas")
+    }else alert("les mots de passes ne correspondent pas")
    
   }
 

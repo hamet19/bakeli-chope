@@ -1,11 +1,19 @@
-<div class="col-sm-6 header-right pull-right" id="table">
+<body>
 
-    <table class="table">
-        <thead class="thead-grey">
+
+    <table class="container">
+        <thead>
             <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Quantity</th>
+                <th>
+                    <h1>Name</h1>
+                </th>
+                <th>
+                    <h1>Price</h1>
+                </th>
+                <th>
+                    <h1>Quantity</h1>
+                </th>
+
             </tr>
         </thead>
         <tbody *ngFor="let item of itemArray">
@@ -16,8 +24,9 @@
                 <td><button type="button" class="btn btn-primary">sell</button></td>
                 <td><button type="button" class="btn btn-danger">update</button></td>
             </tr>
-
         </tbody>
     </table>
 
-</div>
+
+
+</body>

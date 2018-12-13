@@ -1,43 +1,54 @@
-<section id="creer" class="about-us">
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" style=" background-image: url('../../../assets/im.png') no-repeat;
+background-size: cover;
+height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Reusable Contact Form In HTML And CSS - reusable form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="../../../assets/form/form.js"></script>
+</head>
+
+<body>
     <div class="container">
-        <div class="about-us-content">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-txt">
-                            <h2>Add Product In Bakeli-Shope</h2>
-                            <p>
-                                I can add a Product in my shope
-                            </p>
-
-                            <!--/.project-btn-->
-                        </div>
-                        <!--/.about-us-txt-->
+        <div id="form-main">
+            <div id="form-div">
+                <form class="montform" id="reused_form">
+                    <p class="name">
+                        <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" [(ngModel)]="data.name" />
+                    </p>
+                    <p class="email">
+                        <input type="email" required class="feedback-input" id="email" placeholder="Price" name="price" [(ngModel)]="data.price" />
+                    </p>
+                    <p class="text">
+                        <textarea class="feedback-input" id="comment" placeholder="Quantity" name="quantity" [(ngModel)]="data.quantity"></textarea>
+                    </p>
+                    <div class="submit">
+                        <button type="submit" class="button-blue" (click)="addproduct()">SUBMIT</button>
+                        <div class="ease"></div>
                     </div>
-                    <!--/.single-about-us-->
+                </form>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h4>
+                        Error
+                    </h4>
+                    Sorry there was an error sending your form.
                 </div>
-                <!--/.col-->
-                <div class="col-sm-6 header-right pull-right">
-                    <form class="lg-frm " style=" padding:25px ">
-                        <label>Name :</label>
-                        <input type="text " class="form-control " placeholder="Name of product" name="name" [(ngModel)]="data.name">
-                        <label>Price:</label>
-                        <input type="text" class="form-control" placeholder="the price of product" name="price" [(ngModel)]="data.price">
-                        <label>Quantity :</label>
-                        <input type="text" class="form-control" placeholder="quantity of product" name="quantity" [(ngModel)]="data.quantity">
-
-
-                        <button type="button" class="btn btn-primary " (click)="addproduct()">Add Product</button>
-                    </form>
-                    <!--/.single-about-us-->
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h2>Success! Your Message was Sent Successfully.</h2>
                 </div>
-                <!--/.col-->
             </div>
-            <!--/.row-->
         </div>
-        <!--/.about-us-content-->
     </div>
-    <!--/.container-->
+</body>
 
-</section>
-<!--/.about-us-->
+</html>
